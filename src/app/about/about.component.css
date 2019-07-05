@@ -1,0 +1,25 @@
+#about {
+    padding: 2%
+}
+
+div.center.promo {
+    padding : 5% 10% 0 10%;
+}
+
+div.center.promo h2 {
+    font-size: 2em;
+    color: black;
+    margin-top: 3%;
+}
+
+div.center.promo p {
+    font-size: 1.3em;
+    text-align: center;
+    color: #212121;
+    font-family: Raleway, sans-serif;
+}
+
+i {
+    font-size: 6em;
+    color: #4db6ac;
+}
