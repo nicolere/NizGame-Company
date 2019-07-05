@@ -1,0 +1,33 @@
+#quote div {
+    height: 20%
+}
+
+#quote p {
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+#quote span {
+    text-align: right;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 25px;
+    color: #4db6ac;
+    display: inline-block;
+}
+
+#quote h4 {
+    color: #4db6ac;
+    font-size: 2.6em;
+}
+
+.shown {
+    opacity: 1;
+    transition: opacity .6s;
+}
+
+.hidden {
+    transition: opacity .6s;
+    opacity: 0;
+}
