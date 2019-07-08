@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+.row {
+    background: #00bfa5;
+    padding: 40px 10px;
+    text-align: center;
+    color: white;
+}
+
+.row.night {
+    background: #4db6ac;
+}
+
+.row p {
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.col.s6#left {
+    border-right: 1px solid #34495e;
+}
+
+.email-box {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box ::placeholder {
+    color: #2f3542;
+    opacity: 0.75;
+}
+
+.email-box i {
+    font-family: "Material Icons";
+    background: #2f3542;
+    width: 40px;
+    line-height: 45px;
+}
+
+.tbox, .btn.btn1 {
+    border: none;
+    outline: none;
+}
+
+.input-field.inline .tbox {
+    width: 0px;
+    background: #fff;
+    transition: 0.6s;
+}
+
+.email-box:hover > .tbox, .tbox:focus {
+    width: 280px;
+    padding: 0 7px;
+}
+
+.input-field.inline {
+    margin-left: 0px;
+}
+
+.btn.btn1 {
+    background: #2f3542;
+    height: 45px;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#right a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px auto;
+    color:#2f3542;
+    border: 2px solid #2f3542;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+    border-radius: 3px;
+}
+
+#right a:hover {
+    color: #00bfa5;
+    background: #2f3542;
+}
+
+#right a.night:hover {
+    color: #4db6ac;
+    background: #2f3542;
+}
+
+#modal-contact {
+    width: 45%;
+    margin: auto;
+    background: #e3f2fd;
+    border-radius: 5px;
+}
+#modal-contact ::placeholder{
+    color: #2f3542;
+    opacity: 0.75;
+}
+
+#modal-contact.night {
+    background:#2f3542;
+}
+#modal-contact.night ::placeholder{
+    color: #fff;
+}
+
+#modal-contact.night input[type= "text"], #modal-contact.night input[type= "email"], #modal-contact.night #textarea-contact {
+    color: #fff;
+}
+
+#modal-contact h3 {
+    color: #00bfa5;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+
+#modal-contact input[type= "text"], #modal-contact input[type= "email"] {
+    width: 300px;
+    margin: auto;
+    padding: 15px 10px 0px 10px;
+    display: block;
+    transition: 0.25s;
+}
+
+#modal-contact .input-field {
+    width:300px;
+    padding: 15px 10px 0px 10px;
+    margin: 10px 115px;
+    display: block;
+    transition: 0.25s;
+}
+
+#textarea-contact {
+    width:318px;
+    display: block;
+    margin: auto;
+}
+
+#modal-contact input[type= "text"]:focus, #modal-contact input[type= "email"]:focus {
+    width: 400px;
+}
+
+
+#modal-contact input[type= "submit"] {
+    width: 180px;
+    padding: 15px 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+
+
+
+
+
+

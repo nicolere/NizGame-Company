@@ -9,6 +9,7 @@ import { AppHeroComponent } from './app-hero/app-hero.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { QuoteComponent } from './quote/quote.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuoteComponent } from './quote/quote.component';
     AppHeroComponent,
     HeaderComponent,
     AboutComponent,
-    QuoteComponent
+    QuoteComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
