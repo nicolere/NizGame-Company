@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -16,6 +17,9 @@ export class AboutComponent implements OnInit {
         $('body').toggleClass('night');
         $('.divider, .center.promo').toggleClass('night');
         $('#light, #night').toggleClass('night');
+        $('#contact .row, #contact #right .a').toggleClass('night');
+        $('#modal-contact').toggleClass('night');
+        $('span.character-counter').toggleClass('night');
       })
     })
 
