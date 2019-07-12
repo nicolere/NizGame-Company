@@ -1,0 +1,162 @@
+* {
+    font-family: "montserrat", sans-serif;
+}
+
+#footer .row.container{
+	padding: 4% 0 6% 0;
+	height:310px;
+}
+
+.col.s6 h3 {
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.col.s6 img {
+    height: 1.6em;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.col.s6 span {
+    margin-bottom: -1%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.social-btns a {
+    margin-right: 3%;
+}
+
+.social-btns .btn,
+.social-btns .btn::before,
+.social-btns .btn .fab {
+	transition: all 0.35s;
+	transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn::before {
+	top: 90%;
+	left: -110%;
+}
+
+.social-btns .btn .fab {
+	transform: scale(0.8);
+}
+
+.social-btns .btn.facebook::before {
+	background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fab {
+	color: #3b5998;
+}
+
+.social-btns .btn.twitter::before {
+	background-color: #3cf;
+}
+
+.social-btns .btn.twitter .fab {
+	color: #3cf;
+}
+
+.social-btns .btn.instagram::before {
+	/* background: -webkit-radial-gradient(45px 125px, #ffda75 18%,#ff3a49 43%,#ff3a49 50%,#e518a1 70%,#6634e1 100%) */
+	background:
+     /* Use radial gradients to get the rounded */
+    /* gradient effect in each corner */
+
+     /* left bottom */
+    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+     /* left top */
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+      /* right top */
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+     /* right bottom */
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+     /* create a base coat to smooth */
+     /* corner gradients */
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.social-btns .btn.instagram .fab {
+	color: #34495e;
+}
+
+.social-btns .btn.google::before {
+	background-color:#DC4A38;
+}
+
+.social-btns .btn.google .fab {
+	color:#DC4A38;
+}
+
+.social-btns .btn:focus::before,
+.social-btns .btn:hover::before {
+	top: -10%;
+	left: -10%;
+}
+
+.social-btns .btn:focus .fab,
+.social-btns .btn:hover .fab {
+	color: #e3f2fd;
+	transform: scale(1);
+}
+
+.social-btns {
+	height:75px;
+	margin: auto;
+	font-size: 0;
+	margin-bottom: 4%;
+}
+
+.social-btns .btn {
+	background-color: #e3f2fd;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	margin: 0 7px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 28%;
+	box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+	opacity: 0.99;
+}
+
+.social-btns .btn::before {
+	content: '';
+	width: 120%;
+	height: 120%;
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.social-btns .btn .fab {
+	font-size: 38px;
+	vertical-align: middle;	
+}
+
+.col.s6 a#disclaimer, .col.s6 a#privacy {
+	font-size: 1.25em;
+    font-style: normal;
+	line-height: 1.5;
+	font-family: Raleway, sans-serif;
+	color: #212121;
+	padding: 10px 0px 0px 5px;
+}
+
+.col.s6 a#disclaimer.night, .col.s6 a#privacy.night {
+	color:#e3f2fd;
+}
+
+.col.s6 a#disclaimer:hover, .col.s6 a#privacy:hover {
+	color:#4db6ac;
+}
+
+.col.s6 a#disclaimer.night:hover, .col.s6 a#privacy.night:hover {
+	color:#4db6ac;
+}
