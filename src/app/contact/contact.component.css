@@ -154,12 +154,52 @@
 }
 
 
-#modal-contact input[type= "submit"] {
-    width: 180px;
-    padding: 15px 10px;
-    margin: 20px auto;
-    display: block;
+#modal-contact i.material-icons {
+    font-family: "Material Icons";
+    font-size: 3.5rem;
+	color: white;
+	position: relative;
+	border-radius: 50%;
+	padding: 5px;
+    margin: 7px 0px 3px 3.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #4db6ac;
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 }
+
+#modal-contact.night i.material-icons {
+    color: #2f3542;
+}
+
+#modal-contact i.material-icons:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+        border: solid 2px;
+        opacity: 0;
+		transform: scale(0.8);
+		position: absolute;
+		top: -0.5px;
+		left: -0.5px;
+        border-radius: 50%;
+        border-color: #4db6ac;
+		transition: all 0.3s ease;
+}
+
+#modal-contact i.material-icons:hover {
+    color:#4db6ac;
+    background-color: transparent;
+	transform: rotate(-90deg);
+	box-shadow: none;
+}
+
+#modal-contact i.material-icons:hover:after {
+        transform: scale(1);
+        opacity: 1;
+		box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+
 
 
 

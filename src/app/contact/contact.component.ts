@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var TweenMax: any;
-declare let TimelineMax: any;
-import { TweenLite } from "gsap";
+declare var $: any;
 
 @Component({
   selector: 'app-contact',
