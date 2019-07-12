@@ -26,6 +26,24 @@
     border-right: 1px solid #34495e;
 }
 
+.reveal [class*="reveal-"] {
+    opacity: 0;
+}
+
+.reveal .reveal-1 {
+    transform: translateX(-40px);
+}
+
+.reveal .reveal-2 {
+    transform: translateX(40px);
+}
+
+.reveal-visible [class*="reveal-"]{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
 .email-box {
     height: 45px;
     display: flex;
