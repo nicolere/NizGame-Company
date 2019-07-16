@@ -12,13 +12,13 @@
     margin-top: 0;
 }
 
-.col.s6 img {
+.col.s6#social img {
     height: 1.6em;
     margin-right: 1%;
     margin-top: 1%;
 }
 
-.col.s6 span {
+.col.s6#social span {
     margin-bottom: -1%;
     font-weight: bold;
     font-size: 1.2em;
@@ -126,6 +126,9 @@
 	box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
 	opacity: 0.99;
 }
+.social-btns.night .btn {
+	background-color:#e3f2fd;
+}
 
 .social-btns .btn::before {
 	content: '';
@@ -159,4 +162,101 @@
 
 .col.s6 a#disclaimer.night:hover, .col.s6 a#privacy.night:hover {
 	color:#4db6ac;
+}
+
+.card {
+	width: 350px;
+	height: 160px;
+	border-radius: 4%;
+	position: relative;
+	cursor: pointer;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+
+.card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 4%;
+	backface-visibility: hidden;
+}
+
+.card-face.card-face--front img {
+	height: 100%;
+	width: 100%;
+	border-radius: 4%;
+	opacity: 0.65;
+}
+
+.card-face--back {
+	background: #e3f2fd;
+	transform: rotateX( 180deg );
+}
+
+.card.is-flipped {
+	transform: rotateX(180deg) !important;
+}
+
+.back-content {
+	width: 100%;
+	font-size: 1.1em;
+	margin-top: 30px;
+}
+
+.back-content a {
+	color: #4db6ac;
+}
+
+.card.night.hoverable:hover {
+	-webkit-box-shadow: 0 8px 17px 0 rgba(38, 166, 154, 0.25), 0 6px 20px 0 rgba(38, 166, 154, 0.20);
+    box-shadow: 0 8px 17px 0 rgba(38, 166, 154, 0.25), 0 6px 20px 0 rgba(38, 166, 154, 0.20);
+}
+
+.card.night img {
+	opacity: 0.8;
+}
+
+.reveal [class*="reveal-"] {
+    opacity: 0;
+}
+
+.reveal .reveal-1 {
+    transform: translateY(-40px)
+}
+
+.reveal .reveal-2 {
+    transform: translateY(-40px)
+}
+
+.reveal .reveal-3 {
+    transform: translateY(-40px)
+}
+
+.reveal #disclaimer.reveal-4 {
+    transform: translateX(-40px)
+}
+
+.reveal .reveal-5 {
+    transform: translateX(40px)
+}
+
+.reveal-visible [class*="reveal-"] {
+    opacity: 1;
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-visible .reveal-1 {
+    transform: translateY(0);
+    transition-delay: .1s;
+}
+
+.reveal-visible .reveal-2 {
+    transform: translateY(0);
+    transition-delay: .2s;
+}
+
+.reveal-visible .reveal-3 {
+    transform: translateY(0);
+    transition-delay: .3s;
 }
