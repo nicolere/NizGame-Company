@@ -21,7 +21,9 @@ export class AboutComponent implements OnInit {
         $('#contact .row, #contact #right .a').toggleClass('night');
         $('#modal-contact').toggleClass('night');
         $('span.character-counter').toggleClass('night');
+        $('.social-btns').toggleClass('night');
         $('a#disclaimer, a#privacy').toggleClass('night');
+        $('#studios .card').toggleClass('night');
       })
 
       const ratio = 0.1;
