@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { element } from 'protractor';
+// import { element } from 'protractor';
 
 @Component({
   selector: 'app-footer',
