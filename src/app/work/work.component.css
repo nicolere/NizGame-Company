@@ -1,0 +1,48 @@
+h2 {
+  font-family: 'prime';
+  text-transform: uppercase;
+  text-align: center;
+  font-style: bold;
+  font-size: 23px;
+}
+
+#left-p {
+  border-right: 1.5px dashed #34495e;
+}
+
+#left-p.night {
+  border-right: 1.5px dashed #fff;
+}
+
+#right-p .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#right-p .column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+#right-p img {
+  margin-top: 8px;
+  margin-left: 9px;
+  vertical-align: middle;
+}
+
+#right-p #parisCity {
+  margin-top: 60px;
+  width: 240px;
+  height: 270px;
+}
+
+#right-p #cityCar {
+  width: 350px;
+  height: 155px;
+}
+
+#right-p #sunFight {
+  width: 350px;
+  height: 270px;
+}
