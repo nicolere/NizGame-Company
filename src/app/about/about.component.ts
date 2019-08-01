@@ -7,13 +7,11 @@ import * as $ from 'jquery';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    $(document).ready(function () {
-      $('.toggle').click(function () {
+    $(document).ready(function() {
+      $('.toggle').click(function() {
         $('.toggle').toggleClass('active');
         $('body').toggleClass('night');
         $('.divider, .center.promo').toggleClass('night');
@@ -24,31 +22,29 @@ export class AboutComponent implements OnInit {
         $('.social-btns').toggleClass('night');
         $('a#disclaimer, a#privacy').toggleClass('night');
         $('#studios .card').toggleClass('night');
-      })
+        $('#left-p').toggleClass('night');
+      });
 
       const ratio = 0.1;
       const options = {
         root: null,
         rootMargin: '0px',
         threshold: ratio
-      }
+      };
 
-      const handleIntersect = function (entries, observer) {
+      const handleIntersect = function(entries, observer) {
         entries.forEach(entry => {
           if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('reveal-visible');
             observer.unobserve(entry.target);
           }
         });
-      }
+      };
 
-      const observer = new IntersectionObserver(handleIntersect, options)
-      document.querySelectorAll('.reveal').forEach(function (r) {
+      const observer = new IntersectionObserver(handleIntersect, options);
+      document.querySelectorAll('.reveal').forEach(function(r) {
         observer.observe(r);
-      })
-
-    })
-
+      });
+    });
   }
-
 }
