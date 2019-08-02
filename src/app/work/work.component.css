@@ -1,9 +1,17 @@
-h2 {
+h2,
+h3:not(#post-2-title) {
   font-family: 'prime';
   text-transform: uppercase;
   text-align: center;
   font-style: bold;
   font-size: 23px;
+}
+
+#right-p h2 {
+  margin: auto;
+  padding-bottom: 14px;
+  width: 240px;
+  border-bottom: 1px solid #34495e;
 }
 
 #left-p {
@@ -26,7 +34,7 @@ h2 {
 }
 
 #right-p img {
-  margin-top: 8px;
+  margin-top: 15px;
   margin-left: 9px;
   vertical-align: middle;
 }
@@ -37,12 +45,141 @@ h2 {
   height: 270px;
 }
 
-#right-p #cityCar {
+.post-1 {
   width: 350px;
   height: 155px;
+  position: relative;
+  cursor: pointer;
 }
 
-#right-p #sunFight {
+.post-1 img {
+  width: 350px;
+  height: 155px;
+  display: block;
+}
+
+.post-1-s {
+  width: 0px;
+  height: 155px;
+  margin-left: 9px;
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  transition: 0.6s ease;
+}
+
+.post-1 h3 {
+  opacity: 0;
+}
+
+.post-1:hover .post-1-s {
+  width: 350px;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+}
+
+.icon i {
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  margin: 0 8px;
+  opacity: 0;
+}
+
+.post-1:hover .icon i,
+.post-1:hover h3 {
+  opacity: 1;
+  transition: 0.7s 0.3s, color 0.4s;
+}
+
+.icons i:hover,
+.icons-2 i:hover {
+  color: #3498db;
+}
+
+.icons i:hover#heart,
+.icons-2 i:hover#heart {
+  color: #e74c3c;
+}
+.icons i:hover#buy,
+.icons-2 i:hover#buy {
+  color: #2ecc71;
+}
+
+.post-2 {
+  position: relative;
+}
+
+.post-2 img {
   width: 350px;
   height: 270px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.post-2 .image-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.image-content h3 {
+  color: #fff;
+  padding-left: 8px;
+  font-family: 'prime';
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bolder;
+  transform: translateY(17px);
+  transition: 0.35s;
+}
+
+.post-2:hover .image-content h3 {
+  transform: translateY(0px);
+}
+
+.post-2 .icons-2 {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.icon-2 i {
+  text-decoration: none;
+  color: #333;
+  font-size: 25px;
+  margin: 0 8px;
+  opacity: 0;
+}
+
+.post-2:hover .icon-2 i {
+  opacity: 1;
+  transition: 0.5s 0.3s, color 0.4s;
+}
+
+.image-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 0px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: 0.4s;
+}
+
+.image-content:hover::before {
+  height: 125px;
 }
