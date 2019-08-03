@@ -1,0 +1,39 @@
+<div class="col s7">
+  <section class="todoapp">
+    <header class="header">
+      <h4>TODO List</h4>
+      <input
+        class="new-todo"
+        placeholder="Any Suggestions ?"
+        autofocus=""
+        [(ngModel)]="newTodo.title"
+        (keyup.enter)="addTodo()"
+      />
+    </header>
+    <section class="main" *ngIf="todos.length > 0">
+      <ul class="todo-list collection">
+        <li *ngFor="let todo of todos" class="collection-item">
+          <div class="view">
+            <label>
+              <!-- TODO : Label crossed + style if todo checked  -->
+              <input
+                type="checkbox"
+                (click)="toggleTodoComplete(todo)"
+                [checked]="todo.complete"
+              />
+              <span>{{ todo.title }}</span>
+            </label>
+            <i (click)="removeTodo(todo)" class="small material-icons">clear</i>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <span class="todo-count">
+        <strong>{{ todos.length }}</strong>
+        {{ todos.length == 1 ? "item" : "items" }} left
+        <!-- TODO ? Count todo done + show it -->
+      </span>
+    </footer>
+  </section>
+</div>

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+.todoapp {
+  padding: 15px;
+}
+
+.todoapp h4 {
+  font-family: "Titillium Web", sans-serif;
+  box-sizing: border-box;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.new-todo {
+  line-height: 1.2em;
+  font-size: 22px;
+}
+
+.new-todo[placeholder] {
+  font-style: italic;
+}
+
+.todo-list li label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.todo-list li [type="checkbox"] {
+  position: absolute;
+  width: 18px;
+  border: none;
+  margin: 0 auto;
+}
+
+.todo-list li i {
+  font-family: "Material Icons";
+  font-size: 1.6rem;
+  float: right;
+  cursor: pointer;
+}
+
+.footer {
+  margin-left: 10px;
+}
