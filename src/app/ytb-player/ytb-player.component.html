@@ -1,0 +1,7 @@
+<div class="col s5" id="ytb_container">
+  <youtube-player
+    [videoId]="id"
+    (ready)="savePlayer($event)"
+    [playerVars]="playerVars"
+  ></youtube-player>
+</div>
