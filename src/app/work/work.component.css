@@ -27,16 +27,6 @@ h3:not(#post-2-title) {
   border-right: 1.5px dashed #fff;
 }
 
-#todolist {
-  padding: 5px;
-}
-
-#todolist h4 {
-  font-family: "Titillium Web", sans-serif;
-  box-sizing: border-box;
-  margin: 8px 0;
-}
-
 /* CSS right part of project show */
 
 #right-p .row {
