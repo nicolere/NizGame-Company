@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 import { AppComponent } from './app.component';
 import { AppHeroComponent } from './app-hero/app-hero.component';
@@ -12,6 +13,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { WorkComponent } from './work/work.component';
+import { YtbPlayerComponent } from './ytb-player/ytb-player.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,11 @@ import { WorkComponent } from './work/work.component';
     QuoteComponent,
     ContactComponent,
     FooterComponent,
-    WorkComponent
+    WorkComponent,
+    YtbPlayerComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, NgxYoutubePlayerModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
