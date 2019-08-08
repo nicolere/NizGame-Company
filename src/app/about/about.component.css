@@ -1,108 +1,110 @@
 #about {
-    padding: 3.5%;
+  padding: 3.5%;
 }
 
 div.center.promo {
-    padding : 5% 10% 0 10%;
+  padding: 5% 10% 0 10%;
 }
 
 div.center.promo h2 {
-    font-size: 2em;
-    color: black;
-    margin-top: 3%;
+  font-size: 2em;
+  color: black;
+  margin-top: 3%;
 }
 
 div.center.promo p {
-    font-size: 1.3em;
-    text-align: center;
-    color: #212121;
-    font-family: Raleway, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
 }
 
 i {
-    font-size: 6em;
-    color: #4db6ac;
+  font-size: 6em;
+  color: #4db6ac;
 }
 
 .toggle {
-    position: absolute;
-    background: #e3f2fd;
-    border: 2px solid #00151f;
-    height: 20px;
-    width: 45px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: 0.5s
+  position: absolute;
+  background: #e3f2fd;
+  border: 2px solid #00151f;
+  height: 20px;
+  width: 45px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 .toggle.active {
-    background: #34495e;
-    border: 2px solid #fff;
+  background: #34495e;
+  border: 2px solid #fff;
 }
 
 .toggle::before {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 14px;
-    height: 14px;
-    background: #00151f;
-    border-radius: 50%;
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  background: #00151f;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .toggle.active::before {
-    left:25px;
-    background: #fff;
+  left: 25px;
+  background: #fff;
 }
 
-#light, #night {
-    font-size: 1.5rem;
-    color: #00151f;
+#light,
+#night {
+  font-size: 1.5rem;
+  color: #00151f;
 }
 
-#light.night, #night.night {
-    font-size: 1.5rem;
-    color: #fff;
+#light.night,
+#night.night {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 div.center.promo.night p {
-    color: #e3f2fd;
+  color: #e3f2fd;
 }
 
 .reveal [class*="reveal-"] {
-    opacity: 0;
+  opacity: 0;
 }
 
 .reveal .reveal-1 {
-    transform: translateX(-40px)
+  transform: translateX(-40px);
 }
 
 .reveal .reveal-2 {
-    transform: translateY(-40px)
+  transform: translateY(-40px);
 }
 
 .reveal .reveal-3 {
-    transform: translateX(40px)
+  transform: translateX(40px);
 }
 
 .reveal-visible [class*="reveal-"] {
-    opacity: 1;
-    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  opacity: 1;
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
 .reveal-visible .reveal-1 {
-    transform: translateX(0);
-    transition-delay: .1s;
+  transform: translateX(0);
+  transition-delay: 0.1s;
 }
 
 .reveal-visible .reveal-2 {
-    transform: translateY(0);
-    transition-delay: .2s;
+  transform: translateY(0);
+  transition-delay: 0.2s;
 }
 
 .reveal-visible .reveal-3 {
-    transform: translateX(0);
-    transition-delay: .1s;
+  transform: translateX(0);
+  transition-delay: 0.1s;
 }
