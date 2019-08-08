@@ -27,6 +27,37 @@ h3:not(#post-2-title) {
   border-right: 1.5px dashed #fff;
 }
 
+#left-p.night p {
+  color: #fff;
+}
+
+#left-p #desc h3 {
+  margin-top: 20px;
+}
+
+#left-p #desc p {
+  font-size: 16px;
+  font-family: "Raleway";
+}
+
+#left-p #desc img#iPlay1,
+#left-p #desc img#iBox1,
+#left-p #desc img#iPC1 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 24.5%;
+}
+
+#left-p #desc img#iPlay2,
+#left-p #desc img#iBox2,
+#left-p #desc img#iPC2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 32%;
+}
+
 /* CSS right part of project show */
 
 #right-p .row {
@@ -41,7 +72,7 @@ h3:not(#post-2-title) {
 }
 
 #right-p img {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 9px;
   vertical-align: middle;
 }
@@ -189,4 +220,48 @@ h3:not(#post-2-title) {
 
 .image-content:hover::before {
   height: 125px;
+}
+
+#right-p .animated-text {
+  margin-top: 20px;
+  color: #fff;
+  background: #00bfa5;
+  padding: 0 40px;
+  height: 60px;
+  width: 300px;
+  overflow: hidden;
+  font-family: "Dosis", sans-serif;
+  border-radius: 5px;
+}
+
+#right-p.night .animated-text {
+  background: #4db6ac;
+}
+
+#right-p .line {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+#right-p .line:first-child {
+  animation: anim 11s infinite;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -60px;
+  }
+  50% {
+    margin-top: -120px;
+  }
+  75% {
+    margin-top: -180px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
