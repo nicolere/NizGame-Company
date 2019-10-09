@@ -40,6 +40,12 @@
   cursor: pointer;
 }
 
+.crossed {
+  text-decoration-line: line-through;
+  font-style: italic;
+  color: grey;
+}
+
 .footer {
   margin-left: 10px;
 }

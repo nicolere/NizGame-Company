@@ -15,13 +15,15 @@
         <li *ngFor="let todo of todos" class="collection-item">
           <div class="view">
             <label>
-              <!-- TODO : Label crossed + style if todoItem checked  -->
               <input
                 type="checkbox"
                 (click)="toggleTodoComplete(todo)"
                 [checked]="todo.complete"
               />
-              <span>{{ todo.title }}</span>
+              <span [ngClass]="{ crossed: todo.complete }">{{
+                todo.title
+              }}</span>
+              <!-- <span>{{ todo.complete }}</!-->
             </label>
             <i (click)="removeTodo(todo)" class="small material-icons">clear</i>
           </div>
