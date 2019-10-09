@@ -159,20 +159,6 @@
   transition: 0.25s;
 }
 
-#modal-contact .input-field {
-  width: 300px;
-  padding: 15px 10px 0px 10px;
-  margin: 10px 115px;
-  display: block;
-  transition: 0.25s;
-}
-
-#textarea-contact {
-  width: 318px;
-  display: block;
-  margin: auto;
-}
-
 #modal-contact input[type="text"]:focus,
 #modal-contact input[type="email"]:focus {
   width: 400px;
@@ -185,7 +171,7 @@
   position: relative;
   border-radius: 50%;
   padding: 5px;
-  margin: 7px 0px 3px 3.5em;
+  margin: 7px 0px 3px 0px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: #4db6ac;
   transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
