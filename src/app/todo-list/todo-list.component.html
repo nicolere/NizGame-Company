@@ -31,10 +31,14 @@
       </ul>
     </section>
     <footer class="footer">
-      <span class="todo-count">
+      <span class="todo-count" *ngIf="todos.length > 0">
         <strong>{{ todos.length }}</strong>
-        {{ todos.length == 1 ? "item" : "items" }} left
-        <!-- TODO ? Count todo done + show it -->
+        {{ todos.length === 1 ? "item" : "items" }}
+      </span>
+      <span class="todo-count2" *ngIf="todos.length > 0">
+        <strong>{{ countTodoDone() }}</strong>
+        {{ countTodoDone() === 1 || countTodoDone() === 0 ? "item" : "items" }}
+        done
       </span>
     </footer>
   </section>

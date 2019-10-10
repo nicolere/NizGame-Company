@@ -29,4 +29,15 @@ export class TodoListComponent {
   get todos() {
     return this.todoDataService.getAllTodos();
   }
+
+  countTodoDone() {
+    let result: number = 0;
+    let list: Todo[] = this.todoDataService.getAllTodos();
+    // console.log(list);
+    list.forEach(item => {
+      item.complete ? result++ : result + 0;
+    });
+    // console.log(result);
+    return result;
+  }
 }

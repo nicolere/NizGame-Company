@@ -47,5 +47,15 @@
 }
 
 .footer {
+  font-style: italic;
+  font-family: "Dosis", sans-serif;
+}
+
+span.todo-count {
   margin-left: 10px;
+}
+
+span.todo-count2 {
+  margin-right: 10px;
+  float: right;
 }
