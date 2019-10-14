@@ -15,6 +15,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { WorkComponent } from "./work/work.component";
 import { YtbPlayerComponent } from "./ytb-player/ytb-player.component";
 import { TodoListComponent } from "./todo-list/todo-list.component";
+import { ModalJComponent } from './modal-j/modal-j.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TodoListComponent } from "./todo-list/todo-list.component";
     FooterComponent,
     WorkComponent,
     YtbPlayerComponent,
-    TodoListComponent
+    TodoListComponent,
+    ModalJComponent
   ],
   imports: [BrowserModule, NgxYoutubePlayerModule.forRoot(), FormsModule],
   providers: [],
